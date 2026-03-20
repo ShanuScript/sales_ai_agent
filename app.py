@@ -25,5 +25,5 @@ def index():
         message = generate_message(name, company)
         score = lead_score(company)
     return render_template('index.html', message=message, score=score)
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
